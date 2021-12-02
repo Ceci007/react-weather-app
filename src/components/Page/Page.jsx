@@ -6,22 +6,30 @@ import Error from '../Error';
 import Loader from '../Loader';
 import Forecast from '../Forecast';
 
+import useForecast from '../../hooks/useForecast';
+
 import styles from './Page.module.css';
 
 const Page = () => {
+    const { error, loading, forecast, submitRequest } = useForecast();
+
+    const onSubmit = (value) => {
+        submitRequest(value);
+    }
+
     return (
         <Fragment>
             <Header />
             <div className={styles.box}>
                 {/* form */}
-                <Form />
+                { !loading && <Form submitSearch={onSubmit} /> }
                 { /* error */}
-                {/*<Error /> */}
+                { error && <Error message={error} /> }
                 { /* loader */}
-                {/*<Loader />*/}
+                { loading && <Loader /> }
                 { /* forecast */}
-                {/*<Forecast />*/}
             </div>
+            {forecast && <Forecast /> }
         </Fragment>
     );
 };

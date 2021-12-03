@@ -1,10 +1,9 @@
 import React from 'react';
-
-import styles from './Loader.module.css';
+import "./Loader.module.css";
 
 const Loader = () => (
     <div className="loader">
-        <img className="loader__image" src="/assets/loader.gif" />
+        <img className="loader__image" src="/assets/loader.gif" alt="spinner" />
     </div>
     /*
     <div className={styles.box}>

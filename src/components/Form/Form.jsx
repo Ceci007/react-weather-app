@@ -13,7 +13,7 @@ const Form = ({ submitSearch }) => {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form className={styles.form} onSubmit={onSubmit}>
             <input
                 aria-label="location"
                 type="text"

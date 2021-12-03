@@ -12,3 +12,13 @@
     max-width: 675px;
     min-height: 300px;
 }
+
+
+.refresh {
+    border: 3px solid var(--main-text-color);
+    color: var(--main-text-color);
+    background-color: transparent;
+    font-weight: 700;
+    display: block;
+    margin: 20px auto;
+}

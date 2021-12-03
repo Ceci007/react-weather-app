@@ -1,6 +1,23 @@
 .input {
     border-radius: var(--main-border-radius);
     margin-bottom: 1rem;
+    height: 46px;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 #ddd;
+  border-color: #ddd;
 }
 
 .button {
@@ -8,18 +25,19 @@
     border-radius: var(--main-border-radius);
     padding: 0.65rem;
     background-image: var(--gradient);
-    color: var(--main-text-color);
+    color: #fff;
     font-weight: 700;
     box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     line-height: initial;
     width: 100%;
-    height: 38px;
+    height: 46px;
+    transition: transform 0.5s ease;
 }
 
 .button:hover {
-    color: var(--main-text-color);
-    -webkit-transform: scale(0.95);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
+    color: #fff;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }

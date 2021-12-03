@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import styles from './CurrentDayDescriptionItem.module.css';
+
 const CurrentDayDescriptionItem = ({ name, value, unit}) => (
-    <div className="d-flex justify-content-between">
+    <div className={`${styles.darkgray} d-flex justify-content-between`}>
         <p className="mb-0 font-weight-bolder text-uppercase">{name}</p>
         <p className="mb-0">{value} {unit}</p>
     </div>

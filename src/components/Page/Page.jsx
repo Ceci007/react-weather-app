@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from "react-router-dom";
 
 import Header from '../Header';
 import Form from '../Form';
@@ -20,6 +21,9 @@ const Page = () => {
     return (
         <Fragment>
             <Header />
+            <button className={styles.refresh} onClick={() => { window.location.reload(); }}>
+                Refresh
+            </button>
             { !forecast &&
                 <div className={`${styles.box} position-relative`}>
                     {/* form */}

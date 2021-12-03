@@ -12,3 +12,9 @@
     max-width: 675px;
     min-height: 300px;
 }
+
+@media only screen and (max-width: 600px) {
+    .box {
+        width: 300px;
+    }
+}

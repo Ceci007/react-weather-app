@@ -3,6 +3,10 @@ import React from 'react';
 import styles from './Loader.module.css';
 
 const Loader = () => (
+    <div className="loader">
+        <img className="loader__image" src="/assets/loader.gif" />
+    </div>
+    /*
     <div className={styles.box}>
         <svg
             version="1.1"
@@ -48,7 +52,7 @@ const Loader = () => (
                 />
             </rect>
         </svg>
-    </div>
+    </div>*/
 );
 
 export default Loader;

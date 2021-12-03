@@ -12,7 +12,7 @@ this data in a front-end build with react.
 - responsive web app
 
 #### Livedemo
-- [weather-forecast](https://weather-forecast-ceci.netlify.app/)
+- [weather-forecast](https://weather-app-ceci.netlify.app/)
 
 
 ## Getting started
